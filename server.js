@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static('public'));
 
-mongoose.connect('mongodb+srv://workforshreyas:BRo6OLO7N151wJAn@cluster0.z1elezb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://workforshreyas', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Error connecting to MongoDB', err));
 
